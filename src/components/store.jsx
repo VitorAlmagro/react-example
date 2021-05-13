@@ -42,9 +42,9 @@ const Store = () => {
     setItens(initialState);
   };
 
-  const Deletar = itemId => {
-    const itens = itens.filter(c => c.id !== itemId);
-    setItens(itens);
+  const Deletar = id => {
+    const newItens = itens.filter(c => c.id !== id);
+    setItens(newItens);
   };
 
   const Restart = () => {
